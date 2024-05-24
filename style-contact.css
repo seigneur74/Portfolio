@@ -1,0 +1,159 @@
+/* Reinitialisation */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+/*..............*/
+
+/* référence */
+:root{
+    --bg-color: #363676;
+    --text-color: #fff;
+    --main-color: #ffae00;
+    --main-color2:#ab1414;
+    --main-color3:#13a5b5;
+
+    --big-font: 7rem;
+    --p-font: 1.1rem;
+}
+
+/* styliser body */
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Titillium web", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+/* section header */
+nav{
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 32px 2%;
+    background: transparent;
+    transition: all ease .45s;
+}
+.logo{
+    color: var(--text-color);
+    font-size: 41px;
+    font-weight: 600;
+}
+.logo span{
+    color: var(--main-color);
+}
+.navbar{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5%;
+}
+.navbar a{
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0 25px;
+    transition: all ease .50s;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+/* section main */
+
+main{
+    padding: 0 5%;
+    font-size: 0.8rem;
+}
+.message{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+/* section footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-top: 1px solid white;
+    left: 15%;
+    font-size: 0.8rem;
+    color: var(--text-color);
+    padding-left: 5%;
+}
+
+.copyright{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.copyright span{
+    font-size: x-small;
+    color: cyan;
+    font-weight: bold;
+}
+
+.Suivez-moi{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.Suivez-moi i{
+    
+    height: 45px;
+    width: 25px;
+    color: var(--text-color);
+    font-size: 15px;
+    transition: all 0.6s ease-in-out;
+}
+.Suivez-moi i:hover{
+    transform: translateY(-10px);
+}
+
+.Email{
+    margin-top: 25px;
+}
+.Email p{
+    color: var(--text-color);
+    font-size: 15px;
+    transition: all 0.6s ease-in-out;
+}
+.Email p:hover{
+    transform: translateY(-10px);
+}
+.Email span{
+    color: var(--text-color);
+    font-size: 0.9em;
+}
+.Email span:hover{
+    color: var(--main-color);
+}
+.Email h3{
+    margin-bottom: 10px;
+}
+
+.tel{
+    margin-top: 25px;
+}
+.tel p{
+    color: var(--text-color);
+    font-size: 15px;
+    transition: all 0.6s ease-in-out;
+}
+.tel p:hover{
+    transform: translateY(-10px);
+}
+.tel span{
+    color: var(--text-color);
+    font-size: 0.9em;
+}
+.tel span:hover{
+    color: var(--main-color);
+}
+.tel h3{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,345 @@
+/* Reinitialisation */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+/*..............*/
+
+/* référence */
+:root{
+    --bg-color: #1f1f21;
+    --text-color: #fff;
+    --main-color: #ffae00;
+    --main-color2:#ab1414;
+    --main-color3:#13a5b5;
+
+    --big-font: 7rem;
+    --p-font: 1.1rem;
+}
+
+/* styliser body */
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Titillium web", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+/* section header */
+nav{
+   
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 15%;
+    background: transparent;
+    transition: all ease .45s;
+}
+.logo{
+    color: var(--text-color);
+    font-size: 41px;
+    font-weight: 600;
+}
+.logo span{
+    color: var(--main-color);
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0 25px;
+    transition: all ease .50s;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+/* section main */
+
+main{
+    padding: 0 15%;
+}
+.container-main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+img{
+    width: 100%;
+    border-radius: 100%;
+    object-fit: contain;
+}
+.main-img{
+    width: 850px;
+    height: 500px;
+}
+.main-text h2{
+    font-size: 3rem;
+    color: var(--main-color);
+}
+.main-text{
+    height: 500px;
+    margin-left: 50px;
+
+}
+.main-text p{
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: #c3c3c3;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.main-link1{
+    display: inline-block;
+    padding: 25px;
+    padding-block: 20px;
+    background: var(--main-color);
+    color: black;
+    border-radius: 100%;
+    font-size: small;
+    font-weight: bold;
+    transition: all 0.6ms ease-in-out;
+    border: 2px solid var(--main-color);
+}
+.main-link1:hover{
+    transform: translateY(-5px);
+    background: transparent;
+    color: var(--main-color);
+}
+.main-link2{
+    display: inline-block;
+    padding: 15px;
+    padding-block: 20px;
+    background: var(--main-color2);
+    color: black;
+    border-radius: 100%;
+    font-size: small;
+    font-weight: bold;
+    transition: all 0.6ms ease-in-out;
+    border: 2px solid var(--main-color2);
+    margin-left: 25px; 
+}
+.main-link2:hover{
+    transform: translateY(-5px);
+    color: #141414;
+    background: transparent;
+    color: var(--main-color2);
+}
+.main-link3{
+    display: inline-block;
+    padding: 15px;
+    padding-block: 20px;
+    background: var(--main-color3);
+    color: black;
+    border-radius: 100%;
+    font-size: small;
+    font-weight: bold;
+    transition: all 0.6ms ease-in-out;
+    border: 2px solid var(--main-color3);
+    margin-left: 25px; 
+}
+.main-link3:hover{
+    transform: translateY(-5px);
+    color: #141414;
+    background: transparent;
+    color: var(--main-color3);
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+
+
+/* section footer */
+footer{
+    position: absolute;
+    bottom: -1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    border-top: 1px solid white;
+    left: 15%;
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+
+.tel{
+    margin: 14px;
+    padding: 14px;
+}
+.tel p{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 25px;
+    color: var(--text-color);
+    font-size: 15px;
+    margin: 0 7px;
+    transition: all 0.6s ease-in-out;
+    background: transparent;
+}
+.tel p:hover{
+    transform: translateY(-10px);
+}
+.tel span{
+    color: var(--text-color);
+    font-size: 0.9em;
+}
+.tel span:hover{
+    color: var(--main-color);
+}
+.Email{
+    margin: 14px;
+    padding: 14px;
+}
+.Email p{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 25px;
+    color: var(--text-color);
+    font-size: 15px;
+    margin: 0 7px;
+    transition: all 0.6s ease-in-out;
+}
+.Email p:hover{
+    transform: translateY(-10px);
+}
+.Email span{
+    color: var(--text-color);
+    font-size: 0.9em;
+}
+.Email span:hover{
+    color: var(--main-color);
+}
+.Suivez-moi{
+    margin: 14px;
+    padding: 14px;
+}
+.copyright{
+    margin: 14px;
+    padding: 14px;
+}
+.copyright span{
+    font-size: x-small;
+    color: cyan;
+    font-weight: bold;
+}
+.Suivez-moi i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 25px;
+    color: var(--text-color);
+    font-size: 15px;
+    transition: all 0.6s ease-in-out;
+}
+.Suivez-moi i:hover{
+    transform: translateY(-10px);
+}
+
+@media (max-width: 1850px){
+    header{
+        padding: 15px 8%;
+        transition: .2s;
+    }
+    .main-text{
+        left: 8%;
+        transition: .2s;
+    }
+}
+    
+
+@media (max-width: 1370px){
+    header{
+        padding: 15px 4%;
+        transition: .2s;
+    }
+    .main-text{
+        left: 4%;
+        transition: .2s;
+    }
+    :root{
+        --big-font: 5.5rem;
+        --p-font: 1rem;
+        transition: .2s;
+    }
+}
+    
+@media (max-width: 1020px){
+    .navbar a{
+        margin: 0 15px;
+        --big-font: 5rem;
+        --p-font: 1rem;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 950px){
+    .main-text{
+        display: none;
+        order: 2;
+    }
+    main{
+        padding: 70px 4%;
+    }
+    header{
+        padding: 11px 4%;
+    }
+    .container-main{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-img{
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    .img{
+        max-width: 450px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 850px){
+    .navbar{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 50px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar a{
+        display: block;
+        padding: 0px;
+        margin: Opx 0px 40px 0px;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}
